@@ -5,6 +5,9 @@ from typing import List, Tuple
 test = [1,2,3]
 print(np.median(test))
 
+test2 = "huh"
+print(test2 * 2)
+
 def run_matching(scores: List[List], gender_id: List, gender_pref: List) -> List[Tuple]:
     """
     TODO: Implement Gale-Shapley stable matching!
