@@ -1,6 +1,10 @@
 import numpy as np
 from typing import List, Tuple
 
+
+test = [1,2,3]
+print(np.median(test))
+
 def run_matching(scores: List[List], gender_id: List, gender_pref: List) -> List[Tuple]:
     """
     TODO: Implement Gale-Shapley stable matching!
@@ -11,7 +15,8 @@ def run_matching(scores: List[List], gender_id: List, gender_pref: List) -> List
 
     Some Guiding Questions/Hints:
         - This is not the standard Men proposing & Women receiving scheme Gale-Shapley is introduced as
-        - Instead, to account for various gender identity/preference combinations, it would be better to choose a random half of users to act as "Men" (proposers) and the other half as "Women" (receivers)
+        - Instead, to account for various gender identity/preference combinations, it would be better to choose a random half of users to act as 
+        "Men" (proposers) and the other half as "Women" (receivers)
             - From there, you can construct your two preferences lists (as seen in the canonical Gale-Shapley algorithm; one for each half of users
         - Before doing so, it is worth addressing incompatible gender identity/preference combinations (e.g. gay men should not be matched with straight men).
             - One easy way of doing this is setting the scores of such combinations to be 0
@@ -23,6 +28,7 @@ def run_matching(scores: List[List], gender_id: List, gender_pref: List) -> List
     """
     matches = [()]
     return matches
+
 
 if __name__ == "__main__":
     raw_scores = np.loadtxt('raw_scores.txt').tolist()
