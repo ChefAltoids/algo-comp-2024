@@ -8,6 +8,9 @@ print(np.median(test))
 test2 = "huh"
 print(test2 * 2)
 
+test3 = 11234
+print(test3 // 3)
+
 def run_matching(scores: List[List], gender_id: List, gender_pref: List) -> List[Tuple]:
     """
     TODO: Implement Gale-Shapley stable matching!
